@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  padding:0;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+/* Ensure html and body take full width */
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+//header
+ header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: black;
+    }
+  #topheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+  }
+  #downheader {
+    background-color: orange;
+    color: white;
+    padding: 0 32px;
+  }
+  #downheader nav ul {
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+   nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.2s;
+  }
+
+
+  nav a:hover {
+    color: #ffd700;
+  }
+
+
+#topbody {
+  width: 100%;
+  max-width: 100%;
+  background: none;
+  box-shadow: none;
+  display: block;
+  align-items: stretch;
+}
+
+
+#topbody img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: none;
+}
+ /* Logo/brand */
+    .logo h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+
+    .logo p {
+      margin: 0;
+      font-size: 14px;
+      color: white;
+    }
+     /* Centered headline */
+    .headline {
+      text-align: center;
+      margin-top: 200px;
+      font-size: 40px;
+      font-weight: bold;
+      color: orange;
+    }
+
+
+#downbody {
+  padding: 0px;
+  background: #f5f5f5;
+  margin: 32px auto;
+  max-width: 900px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+
+#slideBanner {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 32px auto 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+#slideBanner img {
+  width: 100%;
+  display: none;
+  transition: opacity 0.5s;
+}
+
+
+#slideBanner img.active {
+  display: block;
+  opacity: 1;
+}
+
+
+@media (max-width: 700px) {
+  #topheader, #downheader, #topbody, #downbody, #footer > div {
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    gap: 16px;
+  }
+  #footer > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+// footer
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    footer {
+      background: #f9f9f9;
+      padding: 30px 50px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-top: 1px solid #ddd;
+    }
+    .footer-column {
+      width: 22%;
+      min-width: 220px;
+      margin-bottom: 20px;
+    }
+    .footer-column h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .footer-column p,
+    .footer-column a {
+      font-size: 14px;
+      color: #333;
+      text-decoration: none;
+      line-height: 1.8;
+      display: block;
+    }
+    .footer-column a:hover {
+      color: #0073e6;
+    }
+    .payment-icons img {
+      height: 30px;
+      margin: 5px;
+    }
+    .qr-code {
+      margin-top: 10px;
+    }
+    .qr-code img {
+      width: 120px;
+      height: 120px;
+    }
