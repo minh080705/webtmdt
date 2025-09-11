@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<hea>
+  <meta charset="UTF-8">
+  <title>SportZone Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+<!--header-->
+<header id="header">
+    <div id="downheader">
+      <div class="logo">
+      <h1>SportZone</h1>
+      <p>Diễn đàn đồ thể thao</p>
+    </div>
+        <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myweb.html">My Web</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Connect</a></li>
+        </ul>
+        </nav>
+    </div>
+</header>
+<body>
+  <nav id="product-nav">
+  <ul>
+    <li>
+      <a href="#Giày">GIÀY ▼</a>
+      <ul class="dropdown">
+        <li><a href="#Sneaker">Sneaker</a></li>
+        <li><a href="#Chạy bộ">Chạy bộ</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#Áo">ÁO ▼</a>
+      <ul class="dropdown">
+        <li><a href="#Áo thun">Áo thun</a></li>
+        <li><a href="#Áo thể thao">Áo thể thao</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#Quần">QUẦN ▼</a>
+      <ul class="dropdown">
+        <li><a href="#Quần short">Quần short</a></li>
+        <li><a href="#Quần dài">Quần dài</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#Tất">TẤT ▼</a>
+      <ul class="dropdown">
+        <li><a href="#Tất cổ cao">Tất cổ cao</a></li>
+        <li><a href="#Tất thể thao">Tất thể thao</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#Vợt">VỢT ▼</a>
+      <ul class="dropdown">
+        <li><a href="#Vợt cầu lông">Vợt cầu lông</a></li>
+        <li><a href="#Vọt bóng bàn">Vợt bóng bàn</a></li>
+      </ul>
+    </li>
+  </ul>
+    </nav>
+  <div class="product-banner">
+    <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Product Banner">
+  </div>
+  <section id="product-display">
+    <!-- Giày -->
+    <div class="product-category" id="Giày">
+      <h2>Giày</h2>
+      <!-- Sneaker -->
+      <div class="product-subcategory" id="Sneaker">
+        <button class="subcategory-toggle">
+          Sneaker <span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker">
+            <h4>Sneaker 1</h4>
+            <p>Phong cách trẻ trung</p>
+              <button class="detail-btn"
+              data-title="Sneaker 1"
+              data-desc="Giày sneaker phong cách trẻ trung, phù hợp đi chơi và thể thao."
+              data-price="1.200.000đ"
+              data-img="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+              Xem chi tiết
+            </button>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker">
+            <h4>Sneaker 1</h4>
+            <p>Phong cách trẻ trung</p>
+              <button class="detail-btn"
+              data-title="Sneaker 1"
+              data-desc="Giày sneaker phong cách trẻ trung, phù hợp đi chơi và thể thao."
+              data-price="1.200.000đ"
+              data-img="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+              Xem chi tiết
+            </button>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker">
+            <h4>Sneaker 1</h4>
+            <p>Phong cách trẻ trung</p>
+              <button class="detail-btn"
+              data-title="Sneaker 1"
+              data-desc="Giày sneaker phong cách trẻ trung, phù hợp đi chơi và thể thao."
+              data-price="1.200.000đ"
+              data-img="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+              Xem chi tiết
+            </button>
+          </div>
+        </div>
+      <!-- Chạy bộ -->
+      <div class="product-subcategory" id="Chạy bộ">
+        <button class="subcategory-toggle">
+          Chạy bộ <span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+           <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker">
+            <h4>Sneaker 1</h4>
+            <p>Phong cách trẻ trung</p>
+              <button class="detail-btn"
+              data-title="Sneaker 1"
+              data-desc="Giày sneaker phong cách trẻ trung, phù hợp đi chơi và thể thao."
+              data-price="1.200.000đ"
+              data-img="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+              Xem chi tiết
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Áo -->
+    <div class="product-category" id="Áo">
+      <h2>Áo</h2>
+      <!--Áo thun-->
+      <div class="product-subcategory" id="Áo thun">
+        <button class="subcategory-toggle">
+          Áo thun <span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+           <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker">
+            <h4>Sneaker 1</h4>
+            <p>Phong cách trẻ trung</p>
+              <button class="detail-btn"
+              data-title="Sneaker 1"
+              data-desc="Giày sneaker phong cách trẻ trung, phù hợp đi chơi và thể thao."
+              data-price="1.200.000đ"
+              data-img="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+              Xem chi tiết
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Áo thể thao-->
+      <div class="product-subcategory" id="Áo thể thao">
+        <button class="subcategory-toggle">
+          Áo thể thao <span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/3756042/pexels-photo-3756042.jpeg" alt="Giày chạy bộ">
+            <h4>Chạy bộ 1</h4>
+            <p>Nhẹ, thoáng khí</p>
+            <span>1.800.000đ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--Quần-->
+    <div class="product-category" id="Quần">
+      <h2>Quần</h2>
+      <!--Quần short-->
+      <div class="product-subcategory" id="Quần short">
+        <button class="subcategory-toggle">
+          Quần short<span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker">
+            <h4>Sneaker 1</h4>
+            <p>Phong cách trẻ trung</p>
+            <span>1.200.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+        </div>
+      </div>
+      <!--Quần dài-->
+      <div class="product-subcategory" id="Quần dài">
+        <button class="subcategory-toggle">
+          Quần dài<span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/267202/pexels-photo-267202.jpeg" alt="Giày bóng rổ">
+            <h4>Bóng rổ 1</h4>
+            <p>Giày cao cổ, hỗ trợ mắt cá</p>
+            <span>2.000.000đ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--Tất-->
+    <div class="product-category" id="Tất">
+      <h2>Tất</h2>
+      <!--Tất cổ cao-->
+      <div class="product-subcategory" id="Tất cổ cao">
+        <button class="subcategory-toggle">
+          Tất cổ cao<span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker">
+            <h4>Sneaker 1</h4>
+            <p>Phong cách trẻ trung</p>
+            <span>1.200.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+        </div>
+      </div>
+      <!--Tất thể thao-->
+      <div class="product-subcategory" id="Tất thể thao">
+        <button class="subcategory-toggle">
+          Tất thể thao<span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/3756042/pexels-photo-3756042.jpeg" alt="Giày chạy bộ">
+            <h4>Chạy bộ 1</h4>
+            <p>Nhẹ, thoáng khí</p>
+            <span>1.800.000đ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--Vợt-->
+    <div class="product-category" id="Vợt">
+      <h2>Vợt</h2>
+      <!--Vợt cầu lông-->
+      <div class="product-subcategory" id="Vợt cầu lông">
+        <button class="subcategory-toggle">
+          Vợt cầu lông<span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker">
+            <h4>Sneaker 1</h4>
+            <p>Phong cách trẻ trung</p>
+            <span>1.200.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Sneaker 2">
+            <h4>Sneaker 2</h4>
+            <p>Mẫu giày khác</p>
+            <span>1.500.000đ</span>
+          </div>
+        </div>
+      </div>
+      <!--Vợt bóng bàn-->
+      <div class="product-subcategory" id="Vợt bóng bàn">
+        <button class="subcategory-toggle">
+          Vợt bóng bàn<span class="arrow">▼</span>
+        </button>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://images.pexels.com/photos/3756042/pexels-photo-3756042.jpeg" alt="Giày chạy bộ">
+            <h4>Chạy bộ 1</h4>
+            <p>Nhẹ, thoáng khí</p>
+            <span>1.800.000đ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Modal dùng chung cho tất cả sản phẩm -->
+<div class="modal" id="productModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+    <p><b>Giá:</b> <span id="modalPrice"></span></p>
+    <button class="share-btn">🔗 Chia sẻ</button>
+  </div>
+</div>
+  </section>
+
+
+<footer>
+    <!-- Column 1 -->
+    <div class="footer-column">
+      <h3>Hệ thống đồ thể thao SPORTZONE</h3>
+      <p>Dễ dàng. Nhanh chóng. Tất cả tại Cửa hàng.  
+      Giao hàng ngay tại Hà Nội.</p>
+      <p><b>Hotline:</b> 1800 1234 (Từ 8h - 17h / trừ CN)</p>
+      <p><b>Đặt hàng:</b> 1800 1234 (Từ 8h - 17h / trừ CN)</p>
+      <p><b>Vận chuyển:</b> 0123456789 (Zalo)</p>
+      <p><b>Email:</b> online.sportzone@gmail.com</p>
+    </div>
+
+
+    <!-- Column 2 -->
+    <div class="footer-column">
+      <h3>Về thương hiệu</h3>
+      <a href="#">Hàng tiêu dùng</a>
+      <a href="#">Liên hệ</a>
+      <a href="#">Giới thiệu</a>
+      <a href="#">Chính sách bảo mật</a>
+      <a href="#">Tuyển dụng</a>
+      <a href="#">Cửa hàng</a>
+      <a href="#">Tin tức</a>
+    </div>
+
+
+    <!-- Column 3 -->
+    <div class="footer-column">
+      <h3>Chăm sóc khách hàng</h3>
+      <a href="#">Điều khoản dịch vụ</a>
+      <a href="#">Chính sách quyền riêng tư</a>
+      <a href="#">Chính sách bảo hành</a>
+      <a href="#">Thanh toán & Vận chuyển</a>
+      <a href="#">Chính sách thành viên</a>
+      <a href="#">Hướng dẫn mua hàng</a>
+      <a href="#">Trung tâm trợ giúp</a>
+      <a href="#">Hướng dẫn sử dụng ứng dụng</a>
+    </div>
+
+
+    <!-- Column 4 -->
+    <div class="footer-column">
+      <h3>Phương thức thanh toán</h3>
+      <div class="payment-icons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="MasterCard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/JCB_logo.svg" alt="JCB">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/VNPAY_logo.png" alt="VNPay">
+      </div>
+      <h3>Tải ứng dụng ngay!</h3>
+      <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://thanthomart.vn" alt="QR Code">
+      </div>
+    </div>
+</footer>
+  <script>
+    document.querySelectorAll('.subcategory-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const parent = button.closest('.product-subcategory');
+        const isActive = parent.classList.contains('active');
+
+
+        // Đóng tất cả subcategory khác
+        document.querySelectorAll('.product-subcategory').forEach(sub => {
+          sub.classList.remove('active');
+        });
+
+
+        // Nếu cái đang bấm chưa mở thì mở nó
+        if (!isActive) {
+          parent.classList.add('active');
+        }
+      });
+    });
+
+
+ // Mở modal khi bấm "Xem chi tiết"
+document.querySelectorAll(".detail-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.getElementById("modalImg").src = btn.dataset.img;
+    document.getElementById("modalTitle").textContent = btn.dataset.title;
+    document.getElementById("modalDesc").textContent = btn.dataset.desc;
+    document.getElementById("modalPrice").textContent = btn.dataset.price;
+    document.getElementById("productModal").style.display = "flex";
+  });
+});
+
+
+// Đóng modal khi bấm dấu X
+document.querySelector(".modal .close").addEventListener("click", () => {
+  document.getElementById("productModal").style.display = "none";
+});
+
+
+// Đóng modal khi click ra ngoài nội dung
+window.addEventListener("click", (e) => {
+  const modal = document.getElementById("productModal");
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+
+// Nút chia sẻ
+document.querySelector(".share-btn").addEventListener("click", async () => {
+  const title = document.getElementById("modalTitle").textContent;
+  const url = window.location.href;
+
+
+  if (navigator.share) {
+    // Nếu trình duyệt hỗ trợ Web Share API
+    await navigator.share({
+      title: title,
+      text: "Xem sản phẩm này nè!",
+      url: url
+    });
+  } else {
+    // Nếu không hỗ trợ → copy link
+    navigator.clipboard.writeText(url);
+    alert("Đã copy link chia sẻ vào clipboard!");
+  }
+});
+  </script>
+</body>
+</html>
+
+
+
+
+
