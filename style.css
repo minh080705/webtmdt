@@ -278,5 +278,280 @@ body {
       transform: scale(1.05);
       border-color: orange;
     }
-   
+/* Product Nav */
+#product-nav {
+  background: #f8f8f8;     /* nền xám nhạt */
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+
+#product-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#product-nav li {
+  margin: 0 20px;   /* khoảng cách giữa các mục */
+}
+
+
+#product-nav > ul > li {
+  position: relative;
+  margin: 0 20px;
+}
+
+
+#product-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 9px 10px;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+
+/* Hover hiệu ứng */
+#product-nav a:hover {
+  color: #e63946; /* đỏ nổi bật */
+}
+
+
+/* Thêm gạch dưới khi hover */
+#product-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0;
+  height: 2px;
+  background: #e63946;
+  transition: width 0.3s ease;
+}
+
+
+#product-nav a:hover::after {
+  width: 100%;
+}
+/* Dropdown menu */
+#product-nav .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  min-width: 160px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+
+#product-nav .dropdown li {
+  margin: 0;
+}
+
+
+#product-nav .dropdown a {
+  padding: 10px;
+  font-size: 13px;
+  color: #333;
+  white-space: nowrap;
+}
+
+
+#product-nav .dropdown a:hover {
+  background: #f1f1f1;
+  color: #e63946;
+}
+
+
+/* Hover vào mục cha thì hiện dropdown */
+#product-nav li:hover > .dropdown {
+  display: flex;
+}
+/* Product Banner */
+.product-banner {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.product-banner img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: block;
+}
+
+
+.product-category {
+  margin-bottom: 40px;
+}
+
+
+.product-category h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+.product-list {
+  flex-wrap: nowrap; /* Không cho xuống dòng */
+  gap: 20px;
+  overflow-x: auto; /* Kích hoạt scroll ngang */
+  overflow-y: hidden; /* Ẩn cuộn dọc */
+  padding:0 5px;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  display: flex; /* Ẩn mặc định */
+    /* Ẩn mặc định (accordion animation) */
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+
+.product-list::-webkit-scrollbar {
+  height: 8px; /* Độ cao thanh scroll */
+}
+
+
+.product-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+
+.product-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.product-item {
+  flex: 0 0 auto; /* Giữ item theo chiều ngang */
+  min-width: 220px; /* Chiều rộng tối thiểu mỗi sản phẩm */
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.product-item img {
+  width: 100%;
+  height: 150px;   /* Chiều cao cố định */
+  object-fit: cover; /* Giữ tỷ lệ, cắt thừa */
+  border-radius: 10px;
+}
+.product-subcategory {
+  margin-bottom: 30px;
+}
+.subcategory-toggle {
+  width: 100%;
+  text-align: left;
+  background: #f5f5f5;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subcategory-toggle .arrow {
+  transition: transform 0.3s ease;
+}
+.product-subcategory .product-list {
+  display: none;
+}
+/* Khi active */
+.product-subcategory.active .product-list {
+  max-height: 500px;   /* đủ lớn để chứa sản phẩm */
+  opacity: 1;
+  visibility: visible;
+  padding: 15px 5px;
+  display: flex;
+}
+
+
+.product-subcategory.active .subcategory-toggle .arrow {
+  transform: rotate(180deg); /* Xoay mũi tên */
+}
+/* Nút xem chi tiết */
+.detail-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.detail-btn:hover {
+  background: darkorange;
+}
+
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+}
+.modal-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: red;
+}
+.share-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.share-btn:hover {
+  background: #0056b3;
+}
+
+
+
 
