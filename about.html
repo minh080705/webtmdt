@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SportZone Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+      <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: black;
+    }
+
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 50px;
+      line-height: 1.6;
+    }
+
+
+    .hero .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+
+    .hero .feature {
+      border: 1px solid #ddd;
+      padding: 30px 20px;
+      border-radius: 8px;
+      background: #fff;
+      transition: 0.3s;
+    }
+
+
+    .hero .feature:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: translateY(-5px);
+    }
+
+
+    .hero .feature i {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+
+    .hero .feature h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+
+    .hero .feature p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.value-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.value-card h3 {
+  margin-bottom: 10px;
+  color: #ff4500;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+</style>
+
+
+<header id="header">
+    <div id="downheader">
+      <div class="logo">
+      <h1>SportZone</h1>
+      <p>Diễn đàn đồ thể thao</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="myweb.html">My Web</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Connect</a></li>
+      </ul>
+    </nav>
+    </div>
+</header>
+
+
+  <section class="about">
+  <div class="about-container">
+    <h2>Về Chúng Tôi</h2>
+    <p>
+      Sport Shoes Store được thành lập với sứ mệnh mang đến những đôi giày thể thao chính hãng,
+      chất lượng và phong cách nhất cho khách hàng. Chúng tôi tin rằng một đôi giày tốt
+      không chỉ hỗ trợ hiệu suất vận động mà còn thể hiện cá tính riêng của bạn.
+    </p>
+    <p>
+      Với đội ngũ trẻ trung, năng động và đầy nhiệt huyết, chúng tôi luôn cập nhật xu hướng
+      mới nhất trên thế giới để đem đến cho bạn trải nghiệm mua sắm tuyệt vời.
+    </p>
+
+    <div class="about-values">
+      <div class="value-card">
+        <h3>🎯 Tầm nhìn</h3>
+        <p>Trở thành thương hiệu bán lẻ giày thể thao hàng đầu tại Việt Nam.</p>
+      </div>
+      <div class="value-card">
+        <h3>🤝 Sứ mệnh</h3>
+        <p>Mang đến sản phẩm chính hãng, chất lượng cao với giá cả hợp lý.</p>
+      </div>
+      <div class="value-card">
+        <h3>⭐ Giá trị</h3>
+        <p>Chính trực – Tận tâm – Sáng tạo – Khách hàng là trung tâm.</p>
+      </div>
+    </div>
+
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1519744346365-63dc2f9f34d3" alt="Cửa hàng giày">
+    </div>
+  </div>
+</section>
+ 
+<footer>
+    <!-- Column 1 -->
+    <div class="footer-column">
+      <h3>Hệ thống đồ thể thao SPORTZONE</h3>
+      <p>Dễ dàng. Nhanh chóng. Tất cả tại Cửa hàng.  
+      Giao hàng ngay tại Hà Nội.</p>
+      <p><b>Hotline:</b> 1800 1234 (Từ 8h - 17h / trừ CN)</p>
+      <p><b>Đặt hàng:</b> 1800 1234 (Từ 8h - 17h / trừ CN)</p>
+      <p><b>Vận chuyển:</b> 0123456789 (Zalo)</p>
+      <p><b>Email:</b> online.sportzone@gmail.com</p>
+    </div>
+
+
+    <!-- Column 2 -->
+    <div class="footer-column">
+      <h3>Về thương hiệu</h3>
+      <a href="#">Hàng tiêu dùng</a>
+      <a href="#">Liên hệ</a>
+      <a href="#">Giới thiệu</a>
+      <a href="#">Chính sách bảo mật</a>
+      <a href="#">Tuyển dụng</a>
+      <a href="#">Cửa hàng</a>
+      <a href="#">Tin tức</a>
+    </div>
+
+
+    <!-- Column 3 -->
+    <div class="footer-column">
+      <h3>Chăm sóc khách hàng</h3>
+      <a href="#">Điều khoản dịch vụ</a>
+      <a href="#">Chính sách quyền riêng tư</a>
+      <a href="#">Chính sách bảo hành</a>
+      <a href="#">Thanh toán & Vận chuyển</a>
+      <a href="#">Chính sách thành viên</a>
+      <a href="#">Hướng dẫn mua hàng</a>
+      <a href="#">Trung tâm trợ giúp</a>
+      <a href="#">Hướng dẫn sử dụng ứng dụng</a>
+    </div>
+
+
+    <!-- Column 4 -->
+    <div class="footer-column">
+      <h3>Phương thức thanh toán</h3>
+      <div class="payment-icons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="MasterCard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/JCB_logo.svg" alt="JCB">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/VNPAY_logo.png" alt="VNPay">
+      </div>
+      <h3>Tải ứng dụng ngay!</h3>
+      <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://thanthomart.vn" alt="QR Code">
+      </div>
+    </div>
+</footer>
+</body>
